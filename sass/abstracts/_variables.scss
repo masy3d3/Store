@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//Основные цвета
+$mainPageColor1:#f54732;
+$mainPageColor2:#142558;
+$mainPageColor3:#a1a8bd;
+$mainPageColor4:#e3e8f0;
+
+//Переменные, отвечающие за цвет шрифта и ссылок
+$mainFontColor: #142558;
+$secondaryFontColor: #a1a8bd;
+$hoverFontColor: #ffffff;
+
+//Переменные, отвечающие за цветовые состояния кнопки
+$mainButtonColor: #f24841;
+$hoverButtonColor: #e93d35;
+$pressedButtonColor: #db2d25;
+$inactiveButtonColor: #a1a8bd;
+
+//Переменные, отвечающие за цветовые состояния полей
+$normalInputColor: #e3e8f0;
+$hoverInputColor: #a1a8bd;
+$inFocusInputColor: #315ad5;  
+$inputPlaceholderFontColor: #a1a8bd;
+$fillInputColor: #142558;
+$errInputColor: #f54732;
+$inactiveInputColor: #f3f6fa; 
