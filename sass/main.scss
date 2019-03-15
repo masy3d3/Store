@@ -12,15 +12,16 @@
 
 // 3. Base stuff
 @import
-  'base/base',
   'base/fonts',
+  'base/base',
   'base/typography',
   'base/helpers';
 
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/nav';
 
 // 5. Components
 @import

@@ -1,5 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@mixin bold {
+    font-family: 'PTRootUIWebBold', sans-serif;
+}
 
+@mixin light{
+    font-family: 'PTRootUIWebLight', sans-serif;
+}
+
+@mixin medium {
+    font-family: 'PTRootUIWebMedium', sans-serif;
+}
+
+@mixin regular {
+    font-family: 'PTRootUIWebRegular', sans-serif;
+}
 

@@ -1,0 +1,30 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+    max-width: 1400px;
+    background-color: #ffffff;
+    border: 1px solid #f0f2f7;
+   // background-color: #f0f2f7;
+}
+.nav{
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 915px;
+        height: 100%;
+        border-right: 1px solid #f0f2f7;    
+    }
+    &__item{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__link{
+        @include bold;
+        color: $mainFontColor;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}

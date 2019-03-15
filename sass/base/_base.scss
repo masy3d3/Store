@@ -2,5 +2,15 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 a {
-  text-decoration: none;
-}
+    text-decoration: none;
+  }
+  body {
+      @include light;
+      background-color: #f5f8fa;
+  }
+  header {
+      @include regular;
+  }
+  nav{
+      @include bold;
+  }

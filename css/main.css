@@ -47,11 +47,202 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'PTRootUIWebBold';
+  src: url("../../fonts/PT Root UI_Bold/PT Root UI_Bold.eot");
+  src: url("../../fonts/PT Root UI_Bold/PT Root UI_Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/PT Root UI_Bold/PT Root UI_Bold.woff") format("woff"), url("../../fonts/PT Root UI_Bold/PT Root UI_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTRootUIWebLight';
+  src: url("../../fonts/PT Root UI_Light/PT Root UI_Light.eot");
+  src: url("../../fonts/PT Root UI_Light/PT Root UI_Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/PT Root UI_Light/PT Root UI_Light.woff2") format("woff2"), url("../../fonts/PT Root UI_Light/PT Root UI_Light.woff") format("woff"), url("../../fonts/PT Root UI_Light/PT Root UI_Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTRootUIWebMedium';
+  src: url("../../fonts/PT Root UI_Medium/PT Root UI_Medium.eot");
+  src: url("../../fonts/PT Root UI_Medium/PT Root UI_Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/PT Root UI_Medium/PT Root UI_Medium.woff2") format("woff2"), url("../../fonts/PT Root UI_Medium/PT Root UI_Medium.woff") format("woff"), url("../../fonts/PT Root UI_Medium/PT Root UI_Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTRootUIWebRegular';
+  src: url("../../fonts/PT Root UI_Regular/PT Root UI_Regular.eot");
+  src: url("../../fonts/PT Root UI_Regular/PT Root UI_Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/PT Root UI_Regular/PT Root UI_Regular.woff") format("woff"), url("../../fonts/PT Root UI_Regular/PT Root UI_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: 'PTRootUIWebLight', sans-serif;
+  background-color: #f5f8fa;
+}
+
+header {
+  font-family: 'PTRootUIWebRegular', sans-serif;
+}
+
+nav {
+  font-family: 'PTRootUIWebBold', sans-serif;
 }
 
 /**
  * Basic typography style for copy text
  */
+.header {
+  height: 90px;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+.contact-phone__number {
+  color: #343e5c;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-phone__icon {
+  margin-right: 10px;
+}
+
+.check-order-status {
+  position: relative;
+}
+
+.check-order-status__text {
+  color: #343e5c;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.check-order-status::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: -7px;
+  border: 2px solid #dadee2;
+  border-radius: 50%;
+}
+
+.shopping-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopping-cart__text {
+  margin: auto 8px;
+  color: #343e5c;
+  font-size: 14px;
+}
+
+.shopping-cart__number-goods {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  font-size: 11px;
+  color: #142558;
+  margin: auto 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.shopping-cart__number-goods::before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  top: -6px;
+  right: -9px;
+  position: absolute;
+  background-color: #f6f6fa;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.login-button {
+  width: 100px;
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid #e3e8f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-button__icon {
+  margin-right: 7px;
+}
+
+.login-button__text {
+  color: #343e5c;
+  font-size: 14px;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  max-width: 1400px;
+  background-color: #ffffff;
+  border: 1px solid #f0f2f7;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 915px;
+  height: 100%;
+  border-right: 1px solid #f0f2f7;
+}
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav__link {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=main.css.map */

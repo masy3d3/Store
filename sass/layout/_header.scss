@@ -1,3 +1,91 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header{
+    height: 90px;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.contact-phone{
+    &__number{
+        color: #343e5c;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__icon{
+        margin-right: 10px;
+    }
+}
+
+.check-order-status{
+    position: relative;
+
+    &__text{
+        color: #343e5c;
+        font-size: 14px;
+        margin-right: 16px; 
+    }
+    
+    &::before{
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        right: -7px;    
+        border: 2px solid #dadee2;
+        border-radius: 50%;
+    }
+}
+
+.shopping-cart{
+    display: flex;
+    &__text{
+        margin: auto 8px;
+    color: #343e5c;
+    font-size: 14px;
+
+    }
+    &__number-goods{
+        @include bold;
+        font-size: 11px; 
+        color: $mainFontColor;
+        margin: auto 8px;
+        position: relative;
+        z-index: 1;
+        
+        &::before{
+            content: "";
+            height: 24px;
+            width: 24px;
+            top: -6px;
+            right: -9px;
+            position: absolute;
+            background-color: #f6f6fa;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+.login-button{
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    border: 2px solid #e3e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon{
+        margin-right: 7px;
+    }
+    &__text{
+        color: #343e5c;
+        font-size: 14px;
+    }
+
+}
