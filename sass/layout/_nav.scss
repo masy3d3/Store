@@ -3,13 +3,14 @@
     justify-content: space-around;
     align-items: center;
     height: 56px;
-    max-width: 1400px;
+    width: 1400px;
     background-color: #ffffff;
     border: 1px solid #f0f2f7;
    // background-color: #f0f2f7;
 }
 .nav{
     &__list{
+        margin-left: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -20,11 +21,61 @@
     &__item{
         display: flex;
         justify-content: space-around;
+        &--active{
+            &::before{
+                content : "";
+                position: absolute;
+                margin-top: 30px;
+                width: 122px;
+                height: 3px;
+                background-color: #f54732;
+            }
+        }
     }
     &__link{
-        @include bold;
         color: $mainFontColor;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase;
+        &:hover{
+            color: #f54732;
+            transition: 0.3s;
+        }
     }
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    &__input{
+       border: none;
+       font-size: 16px;
+       height: 56px;
+       width: 300px;
+       color: $fillInputColor;
+       &:focus{
+        outline:none;
+       /* .search-form__inpute--focus{
+            fill:red;
+        }*/
+    } 
+       
+       &::placeholder{
+        color: #a1a8bd;
+       }
+   
+    }
+    &__button{
+        background-color: #fff;
+        border: none;
+        border-right: 1px solid #f0f2f7;
+        height: 56px;
+        width: 50px;
+        margin-right: 200px;
+        &:focus{
+            outline:none;
+            background-color: $normalInputColor;
+        }
+    }        
+    
 }

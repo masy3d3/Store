@@ -47,6 +47,11 @@ table {
   border-spacing: 0;
 }
 
+input {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: 'PTRootUIWebBold';
   src: url("../../fonts/PT Root UI_Bold/PT Root UI_Bold.eot");
@@ -212,12 +217,13 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 56px;
-  max-width: 1400px;
+  width: 1400px;
   background-color: #ffffff;
   border: 1px solid #f0f2f7;
 }
 
 .nav__list {
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,10 +245,79 @@ nav {
       justify-content: space-around;
 }
 
+.nav__item--active::before {
+  content: "";
+  position: absolute;
+  margin-top: 30px;
+  width: 122px;
+  height: 3px;
+  background-color: #f54732;
+}
+
 .nav__link {
-  font-family: 'PTRootUIWebBold', sans-serif;
   color: #142558;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
+}
+
+.nav__link:hover {
+  color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+}
+
+.search-form__input {
+  border: none;
+  font-size: 16px;
+  height: 56px;
+  width: 300px;
+  color: #142558;
+}
+
+.search-form__input:focus {
+  outline: none;
+  /* .search-form__inpute--focus{
+            fill:red;
+        }*/
+}
+
+.search-form__input::-webkit-input-placeholder {
+  color: #a1a8bd;
+}
+
+.search-form__input:-ms-input-placeholder {
+  color: #a1a8bd;
+}
+
+.search-form__input::-ms-input-placeholder {
+  color: #a1a8bd;
+}
+
+.search-form__input::placeholder {
+  color: #a1a8bd;
+}
+
+.search-form__button {
+  background-color: #fff;
+  border: none;
+  border-right: 1px solid #f0f2f7;
+  height: 56px;
+  width: 50px;
+  margin-right: 200px;
+}
+
+.search-form__button:focus {
+  outline: none;
+  background-color: #e3e8f0;
 }
 /*# sourceMappingURL=main.css.map */
