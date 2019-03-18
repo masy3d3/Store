@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__sort-section{
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo-page{
+    width: 100%;
+    height: 236px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    &__text{
+        margin-left: 115px;
+        @include bold;
+        color: $mainFontColor;
+        font-size: 42px;
+    }
+    &__img{
+        margin-right: 200px;
+    }
+}
+
+
+
+.sort-section{
+    width: 1169px;
+    height: 92px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    &__wrap-main-sort{
+        display: flex;
+        margin-right: 31px;
+    }
+    &__wrap-name-sort{
+        margin-right: 63px;
+    }
+}
+
+.input-price{
+    width: 64px;
+    height: 6px;
+    border-radius: 3px;
+    border: 2px solid $normalInputColor;
+    background-color: #ffffff;
+   
+    @include bold;
+    color: #142558;
+    font-size: 14px;
+    padding: 13px 10px 11px 10px;
+    &:focus{
+        outline:none;
+    }
+}
+
+.section-price{
+    
+    display: flex;
+    &__text{
+        @include bold;
+        color: #142558;
+        font-size: 14px;
+        margin: 39px 22px 40px 33px; 
+    }
+
+    &__wrap{
+        height: 58px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        
+       
+    }
+
+    &__min-price{
+        margin-right: 28px;
+    }
+
+    &__slider{
+            appearance:none;
+            margin-top: 11px;
+            width: 100%;
+            height: 3px;
+            border-radius: 2px;
+            background-color: #a1a8bd;
+        
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: 17px;
+                height: 17px;
+                border: 1px solid $mainPageColorGray;
+                background-color: #ffffff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            &::-ms-track{
+                appearance:none;
+                margin-top: 11px;
+                width: 100%;
+                height: 3px;
+                border-radius: 2px;
+                background-color: #a1a8bd;
+            } 
+            &::-ms-thumb{
+                appearance: none;
+                width: 17px;
+                height: 17px;
+                border: 1px solid $mainPageColorGray;
+                background-color: #ffffff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            &::-moz-range-track {
+                appearance:none;
+                margin-top: 11px;
+                width: 100%;
+                height: 3px;
+                border-radius: 2px;
+                background-color: #a1a8bd;
+            }
+            &::-moz-range-thumb{
+                appearance: none;
+                width: 17px;
+                height: 17px;
+                border: 1px solid $mainPageColorGray;
+                background-color: #ffffff;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            &:focus{
+                outline:none;
+            }
+    }
+}
+
+.section-price-wrap{
+    position: relative;  
+    
+    &__input-wrap{
+    
+        &::before{
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 2px;
+            background-color: $mainFontColor;
+            left: 95px;
+            top: 15px;
+        }
+    }
+}
+
+.name-sort{
+    position: relative;
+    &__text{
+        
+        color: #142558;
+        font-size: 16px;
+    }
+    &__select{
+        margin-left: 11px;
+        @include bold;
+        color: #142558;
+        font-size: 16px;
+        appearance: none;
+        border: none;
+        z-index: -1;
+        width: 150px;
+        cursor: pointer;
+        
+        &:focus{
+            outline:none;
+        }
+    }
+    &__icon{
+        position: absolute;
+        border: 8px solid transparent;
+        border-bottom: 0;
+        right:-10px;
+        top: 5px;
+        transform: rotate(90deg);
+    }
+    
+}
+    
+.number-of-goods{
+    position: relative;
+    &__text{
+        color: #142558;
+        font-size: 16px;
+    }
+    &__select{
+        margin-left: 11px;
+        @include bold;
+        color: #142558;
+        font-size: 16px;
+        appearance: none;
+        border: none;
+        z-index: -1;
+        width: 35px;
+        cursor: pointer;
+        
+        &:focus{
+            outline:none;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        border: 8px solid transparent;
+        border-bottom: 0;
+        right:-8px;
+        top: 5px;
+        transform: rotate(90deg);
+    }
+}
+  

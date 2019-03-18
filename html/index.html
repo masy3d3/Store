@@ -84,10 +84,72 @@
           </button>
         </form>
     </nav>
-    <main>
+    <main class="main-content">
+        <section class="logo-page">
+            <h1 class="logo-page__text">Стулья и кресла</h1>
+            <img src="../img/chairСatalog/section_logo.png" alt="Стулья и кресла" class="logo-page__img">
+        </section>
+        <div class="main-content__sort-section sort-section">
+            
+            <div class="sort-section__wrap-price section-price">
+                <span class="section-price__text">Цена</span>
+                <div class="section-price__wrap section-price-wrap">
+                    <div class="section-price-wrap__input-wrap">
+                        <input type="text" value="5300"class="input-price section-price__min-price">
+                        <input type="text" value="12900" class="input-price section-price__max-price">
+                    </div>
+                    <input type="range" value="25000" min="0" max="50000" step="1" class="section-price__slider">  
+                </div>
+            </div>
 
+            <div class="sort-section__wrap-main-sort">
+                    <div class="sort-section__wrap-name-sort name-sort">
+                    <span class="name-sort__text">
+                            Сортировка:
+                    </span>
+                    <select class="name-sort__select">
+                        <option class="name-sort__items" value="По наименованию">По наименованию</option>
+                        <option class="name-sort__items" value="Дорогие сверху">Дорогие сверху</option>
+                        <option class="name-sort__items" value="Дешевые сверху">Дешевые сверху</option>
+                    </select>
+                    
+                    <svg class="name-sort__icon" xmlns="http://www.w3.org/2000/svg" width="5" height="7" fill-rule="evenodd" fill="#a1a8bd">
+                        <path d="M5.015 3.445L1.784.447 1.306.002.708.447l-.718.777 2.393 2.221L-.01 5.777l.718.667.598.555.478-.555 3.231-2.999z"/>
+                    </svg> 
+                    
+                </div>
+
+                <div class="sort-section__wrap-number-of-goods number-of-goods">
+                    <span class="number-of-goods__text">
+                        Товаров на странице:   
+                    </span>
+                    <select class="number-of-goods__select">
+                            <option value="24">24</option>
+                            <option value="12">12</option>
+                            <option value="6">6</option>
+                            
+                    </select>
+                    <svg class="number-of-goods__icon" xmlns="http://www.w3.org/2000/svg" width="5" height="7" fill-rule="evenodd" fill="#a1a8bd">
+                        <path d="M5.015 3.445L1.784.447 1.306.002.708.447l-.718.777 2.393 2.221L-.01 5.777l.718.667.598.555.478-.555 3.231-2.999z"/>
+                    </svg> 
+                </div>
+            </div>
+            
+
+        </div>
+        
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </main>
-
+    
     <footer class="footer">
         <div class="footer__wrap-nav-and-logo">
             <a class="nav-bar__logo logo-section" href="./index.html">
@@ -135,9 +197,9 @@
                 </a>
             </div>
             <div class="copyright-block__order-status order-status">
-                <a href="#" class="order-status__link">
+                <a href="#" class="order-status__link order-status--hover">
                         Проверить статус заказа
-                      <svg class="order-status__icon" xmlns="http://www.w3.org/2000/svg" width="5" height="7" fill-rule="evenodd" fill="#9ca2b7">
+                      <svg class="order-status__icon order-status--hover" xmlns="http://www.w3.org/2000/svg" width="5" height="7" fill-rule="evenodd" fill="#9ca2b7">
                         <path d="M5.015 3.445L1.784.447 1.306.002.708.447l-.718.777 2.393 2.221L-.01 5.777l.718.667.598.555.478-.555 3.231-2.999z"/>
                     </svg> 
                 </a>

@@ -110,12 +110,17 @@
             border: 2px solid #dadee2;
             border-radius: 50%;
         }
-        &:hover{
-            color: $mainPageColorRed;
-            transition: 0.3s;
-        }
+      
     }
     &__icon{
         margin-left: 16px;
+       
+    }
+    &--hover{
+        &:hover{
+            color: $mainPageColorRed;
+            fill: $mainPageColorRed;
+            transition: 0.3s;
+        }
     }
 }
