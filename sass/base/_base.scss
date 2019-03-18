@@ -4,13 +4,27 @@
 a {
     text-decoration: none;
   }
-  body {
+  html,body {
       @include light;
       background-color: #f5f8fa;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      padding: 0;
   }
+  main{
+    flex:1 0 auto;
+  }
+
+  footer{  
+      flex: 0 0 auto;    
+  }
+
   header {
       @include regular;
   }
+
   nav{
       @include bold;
   }

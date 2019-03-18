@@ -88,9 +88,31 @@ a {
   text-decoration: none;
 }
 
-body {
+html, body {
   font-family: 'PTRootUIWebLight', sans-serif;
   background-color: #f5f8fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 header {
@@ -207,6 +229,166 @@ nav {
   font-size: 14px;
 }
 
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #222328;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__wrap-nav-and-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  height: 96px;
+  border-bottom: 1px solid #38393e;
+}
+
+.footer__nav-bar {
+  width: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 770px;
+}
+
+.footer__nav-link {
+  color: #ffffff;
+  font-family: 'PTRootUIWebBold', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.footer__nav-link:hover {
+  color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__wrap-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 26px;
+  width: 1170px;
+  height: 100px;
+}
+
+.copyright__text {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+}
+
+.support__wrap {
+  margin-bottom: 6px;
+}
+
+.support__text {
+  margin-left: 9px;
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.support__tel {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #a1a8bd;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.login {
+  margin-right: 160px;
+}
+
+.login__button-text {
+  color: #a1a8bd;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.login__button-text:hover {
+  color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.order-status {
+  position: relative;
+}
+
+.order-status__link {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.order-status__link::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: -7px;
+  border: 2px solid #dadee2;
+  border-radius: 50%;
+}
+
+.order-status__link:hover {
+  color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.order-status__icon {
+  margin-left: 16px;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,7 +399,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 56px;
-  width: 1400px;
+  max-width: 1400px;
   background-color: #ffffff;
   border: 1px solid #f0f2f7;
 }
