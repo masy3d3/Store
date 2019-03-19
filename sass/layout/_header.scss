@@ -3,12 +3,18 @@
 // -----------------------------------------------------------------------------
 .header{
     height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+.header-wrap{
+    width: 1400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
-}
 
+}
 .contact-phone{
     &__number{
         color: #343e5c;
