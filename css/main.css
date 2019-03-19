@@ -201,7 +201,7 @@ nav {
   font-size: 14px;
 }
 
-.shopping-cart__text:hover {
+.shopping-cart:hover > .shopping-cart__text {
   color: #f54732;
   -webkit-transition: 0.3s;
   transition: 0.3s;

@@ -64,15 +64,17 @@
 
 .shopping-cart{
     display: flex;
+
     &__text{
         margin: auto 8px;
     color: #343e5c;
     font-size: 14px;
-    &:hover{
-        color: $mainPageColorRed;
-        transition: 0.3s;
     }
-
+    &:hover{
+        &>.shopping-cart__text{
+            color: $mainPageColorRed;
+            transition: 0.3s;
+        }    
     }
     &__number-goods{
         @include bold;
