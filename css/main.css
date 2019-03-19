@@ -123,7 +123,6 @@ nav {
  */
 .header {
   height: 90px;
-  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,7 +465,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 56px;
-  max-width: 1400px;
   background-color: #ffffff;
   border: 1px solid #f0f2f7;
 }
