@@ -110,17 +110,16 @@
             border: 2px solid #dadee2;
             border-radius: 50%;
         }
-      
+      &:hover{
+        transition: 0.3s;
+        color: $mainPageColorRed;
+        &>svg{
+            transition: 0.3s;
+            fill: $mainPageColorRed;
+        }
+      }
     }
     &__icon{
         margin-left: 16px;
-       
-    }
-    &--hover{
-        &:hover{
-            color: $mainPageColorRed;
-            fill: $mainPageColorRed;
-            transition: 0.3s;
-        }
     }
 }

@@ -374,15 +374,20 @@ nav {
   border-radius: 50%;
 }
 
-.order-status__icon {
-  margin-left: 16px;
-}
-
-.order-status--hover:hover {
-  color: #f54732;
-  fill: #f54732;
+.order-status__link:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #f54732;
+}
+
+.order-status__link:hover > svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #f54732;
+}
+
+.order-status__icon {
+  margin-left: 16px;
 }
 
 .nav-bar {
@@ -526,13 +531,20 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 26px 0 76px 0;
+  margin: 26px 0 73px 0;
 }
 
 .main-content__next-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 100px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo-page {
@@ -887,7 +899,7 @@ nav {
   background-image: url(../../img/chairСatalog/discount.png);
   background-repeat: no-repeat;
   -webkit-box-shadow: inset 125px -2px 300px 86px #c9d6e0;
-  box-shadow: inset 125px -2px 300px 86px #c9d6e0;
+          box-shadow: inset 125px -2px 300px 86px #c9d6e0;
 }
 
 .discount__text {
@@ -925,5 +937,87 @@ nav {
 
 .discount__see-all:focus {
   outline: none;
+}
+
+.next-pages {
+  width: 1170px;
+  height: 90px;
+  background-color: #ffffff;
+}
+
+.next-pages__page-number {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.next-pages__page-number:hover {
+  color: #f24741;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.next-pages__page-number {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #3a405b;
+  font-size: 14px;
+}
+
+.next-pages--active {
+  color: #f54732;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 9px 18px rgba(168, 172, 185, 0.53);
+          box-shadow: 0 9px 18px rgba(168, 172, 185, 0.53);
+  background-color: #ffffff;
+}
+
+.next-pages__back {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.next-pages__forward {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48px;
+  border-radius: 50%;
+  height: 48px;
+  border: 2px solid #e3e8f0;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow:hover > svg > use {
+  fill: #f24741;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.arrow__modif {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */
