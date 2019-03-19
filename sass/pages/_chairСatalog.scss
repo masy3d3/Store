@@ -10,6 +10,13 @@
         display: flex;
         justify-content: space-between;
     }
+    &__goods{
+        display: flex;
+        margin: 26px 0 76px 0;
+    }
+    &__next-pages{
+        display: flex;
+    }
 }
 
 .logo-page{
@@ -29,8 +36,6 @@
         margin-right: 200px;
     }
 }
-
-
 
 .sort-section{
     width: 1169px;
@@ -226,3 +231,116 @@
     }
 }
   
+.goods{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    &__card{
+        width: 270px;
+        height: 384px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        &:hover{
+            transition: 0.3s;
+            box-shadow: 0 9px 21px rgba(168, 172, 185, 0.44);
+        }
+    }
+    &__link{
+        height: 240px;
+    }
+    &__discount-wrap{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 32px 15px;
+
+    &__name{
+        color: #142558;
+        font-size: 16px;
+        @include bold;
+       
+    }
+    &__price{
+        @include bold;
+        color: #143458;
+        font-size: 24px;
+        margin-top: 13px;
+    }
+    &__in-cart{
+        width: 99px;
+        height: 36px;
+        border-radius: 3px;
+        border: 2px solid #e3e8f0;
+        background-color: #fff;
+        margin-top: 24px;
+
+        color: #343e5c;
+        @include bold;
+        font-size: 14px;
+
+        &:hover{
+            border-color: #f24841;
+            color: #f24841;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        &:active{
+            border-color: #db2d25;
+            color: #db2d25;
+        }
+        &:focus{
+            outline:none;
+        }
+    }
+}
+.discount{
+    width: 571px;
+    height: 383px;
+    background-image: url(../../img/chairСatalog/discount.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 125px -2px 300px 86px rgba(201,214,224,1);
+    -moz-box-shadow: inset 125px -2px 300px 86px rgba(201,214,224,1);
+    box-shadow: inset 125px -2px 300px 86px rgba(201,214,224,1);
+    
+    &__text{
+        @include bold;
+        color: #142558;
+        font-size: 36px;
+        margin-bottom: 31px;
+        margin-left: 40px;
+    }
+    &__see-all{
+        width: 121px;
+        height: 36px;
+        border-radius: 5px;
+        border: 2px solid rgba(20,52,88,0.16);
+        background-color: rgba(255, 255, 255, 0.16);
+        margin-left: 40px;
+
+        @include bold;
+        color: #143458;
+        font-size: 14px;
+
+        &:hover{
+            border-color: #f2474170;
+            color: #f24741d7;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        &:active{
+            border-color: #db2d2570;
+            color: #db2e25d7;
+        }
+        &:focus{
+            outline:none;
+        }
+    }
+}
