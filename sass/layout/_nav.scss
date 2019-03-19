@@ -53,18 +53,13 @@
        height: 56px;
        width: 300px;
        color: $fillInputColor;
-       &:focus{
-        outline:none;
-       /* .search-form__inpute--focus{
-            fill:red;
-        }*/
     } 
        
        &::placeholder{
         color: #a1a8bd;
        }
    
-    }
+    
     &__button{
         background-color: #fff;
         border: none;
@@ -76,6 +71,6 @@
             outline:none;
             background-color: $normalInputColor;
         }
-    }        
-    
-}
+    }
+}        
+

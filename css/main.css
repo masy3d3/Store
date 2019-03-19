@@ -166,6 +166,30 @@ nav {
   border-radius: 50%;
 }
 
+.check-order-status:hover > .check-order-status__text {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #f54732;
+}
+
+.check-order-status:hover > .check-order-status__icon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #f54732;
+}
+
+.check-order-status:active > .check-order-status__text {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #db2d25;
+}
+
+.check-order-status:active > .check-order-status__icon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #db2d25;
+}
+
 .shopping-cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,6 +200,12 @@ nav {
   margin: auto 8px;
   color: #343e5c;
   font-size: 14px;
+}
+
+.shopping-cart__text:hover {
+  color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .shopping-cart__number-goods {
@@ -222,6 +252,42 @@ nav {
 .login-button__text {
   color: #343e5c;
   font-size: 14px;
+}
+
+.login-button:hover {
+  border-color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login-button:hover > .login-button__text {
+  color: #f54732;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login-button:hover > .login-button__icon {
+  fill: #f54732;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.login-button:active {
+  border-color: #db2d25;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login-button:active > .login-button__text {
+  color: #db2d25;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login-button:active > .login-button__icon {
+  fill: #db2d25;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer {
@@ -380,7 +446,7 @@ nav {
   color: #f54732;
 }
 
-.order-status__link:hover > svg {
+.order-status__link:hover > .order-status__icon {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   fill: #f54732;
@@ -467,26 +533,19 @@ nav {
   color: #142558;
 }
 
-.search-form__input:focus {
-  outline: none;
-  /* .search-form__inpute--focus{
-            fill:red;
-        }*/
-}
-
-.search-form__input::-webkit-input-placeholder {
+.search-form::-webkit-input-placeholder {
   color: #a1a8bd;
 }
 
-.search-form__input:-ms-input-placeholder {
+.search-form:-ms-input-placeholder {
   color: #a1a8bd;
 }
 
-.search-form__input::-ms-input-placeholder {
+.search-form::-ms-input-placeholder {
   color: #a1a8bd;
 }
 
-.search-form__input::placeholder {
+.search-form::placeholder {
   color: #a1a8bd;
 }
 

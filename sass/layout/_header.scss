@@ -40,6 +40,27 @@
         border: 2px solid #dadee2;
         border-radius: 50%;
     }
+    
+    &:hover{
+        &>.check-order-status__text{
+            transition:0.3s;
+            color:$mainPageColorRed;
+        }
+        &>.check-order-status__icon{
+            transition:0.3s;
+            fill:$mainPageColorRed;
+        } 
+    }
+    &:active{
+        &>.check-order-status__text{
+            transition:0.3s;
+            color:$pressedButtonColor;
+        }
+        &>.check-order-status__icon{
+            transition:0.3s;
+            fill:$pressedButtonColor;
+        } 
+    }
 }
 
 .shopping-cart{
@@ -48,6 +69,10 @@
         margin: auto 8px;
     color: #343e5c;
     font-size: 14px;
+    &:hover{
+        color: $mainPageColorRed;
+        transition: 0.3s;
+    }
 
     }
     &__number-goods{
@@ -70,6 +95,7 @@
             z-index: -1;
         }
     }
+
 }
 
 .login-button{
@@ -87,5 +113,29 @@
         color: #343e5c;
         font-size: 14px;
     }
-
+    &:hover{
+        border-color:$mainPageColorRed;
+        transition: 0.3s;
+        &>.login-button__text{
+            color: $mainPageColorRed;
+            transition: 0.3s;
+        }
+        &>.login-button__icon{
+            fill:$mainPageColorRed;
+            transition: 0.2s;
+        }
+    }
+    &:active{
+        border-color:$pressedButtonColor;
+        transition: 0.3s;
+        &>.login-button__text{
+            color: $pressedButtonColor;
+            transition: 0.3s;
+        }
+        &>.login-button__icon{
+            fill:$pressedButtonColor;
+            transition: 0.2s;
+        }
+    }
+    
 }
