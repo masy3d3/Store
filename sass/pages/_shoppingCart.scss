@@ -1,0 +1,135 @@
+.main-content{
+    &__goods-in-the-shop-cart{
+        margin-top: 58px;
+    }
+    &__checkout{
+        margin: 37px 0 88px;
+    }
+}
+.amount-wrap{
+    &--shopping-cart{
+        margin: 0;
+    }
+}
+
+.goods-in-the-shop-cart{
+    width: 869px; 
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding-left: 46px;
+    padding-right: 41px;
+    display: flex;
+    flex-direction: column;
+    &__header{
+        @include bold; 
+        color: #142558;
+        font-size: 36px;
+        margin: 42px 0 31px;
+    }
+    &__items{
+        padding: 7px 0 7px;
+    }
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    
+    border-top: 1px solid #f0f2f7;
+    &__inf-wrap{
+        display: flex;
+        align-items: center;
+    }
+    &__price-amount-wrap{
+        display: flex;
+        align-items: center;
+    }
+    &__name{
+        @include bold;
+        color: #142558;
+        font-size: 16px;
+    }
+    &__id{
+        @include light;
+        margin-top: 8px;
+        color: #a1a8bd;
+        font-size: 14px;
+    }
+    &__close{
+
+        position: relative;
+        width: 14px;
+        height: 14px;
+       
+        &:hover{
+            cursor: pointer;
+
+        }
+
+        &:before{
+            right: 6px;
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 2px;
+            background-color: #a1a8bd;
+            transform: rotate(45deg);
+        }
+
+        &:after{
+            right: 6px;
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 2px;
+            background-color: #a1a8bd;
+            transform: rotate(-45deg);
+        }
+     
+    }
+    
+    &__amount-price{
+        @include bold;
+        color: #142558;
+        font-size: 18px;
+        margin: 0px 29px 0px 67px;
+    }
+    &__amount{
+        width: 41px;
+        height: 30px;
+        border-radius: 3px;
+        border: 2px solid #e3e8f0;
+        background-color: #ffffff;
+        padding: 5px;
+
+        @include medium;
+        text-align: center;
+        color: #142558;
+        font-size: 16px;
+    }
+    &__price{
+        @include bold;
+        color: #142558;
+        font-size: 18px;
+        margin-right: 74px;
+    }
+}
+
+.inf-wrap{
+    &__about{
+        margin-left: 19px;
+    }
+}
+.order-price{
+    width: 869px;
+    height: 93px;   //===================
+    border-radius: 0 0 5px 5px;
+    background-color: #e3eaef;
+}
+.checkout{
+    width: 869px;
+    height: 872px;  //===================
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////
