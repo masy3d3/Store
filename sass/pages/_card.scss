@@ -1,0 +1,39 @@
+.main-content{
+
+    &__path{
+        width: 1200px;
+        margin-top: 27px;
+    }
+}
+
+.path{
+    &__main-page{
+        @include light;
+        color: #828aa2;
+        font-size: 14px;
+        &:hover{
+            color: #e93d35;
+            transition: 0.3s;
+        }
+    }
+    
+    &__nav-item{
+        @include light;
+        color: #828aa2;
+        font-size: 14px;
+        &:hover{
+            color: #e93d35;
+            transition: 0.3s;
+        }
+    }
+
+    &__current-page{
+        @include bold;
+        color: #142558;
+        font-size: 14px;
+    }
+
+    &__icon{
+        margin: 0 6px -2px 6px;
+    }
+}
