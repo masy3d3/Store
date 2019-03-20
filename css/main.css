@@ -98,7 +98,7 @@ a {
 }
 
 html, body {
-  font-family: 'PTRootUIWebLight', sans-serif;
+  font-family: 'PTRootUIWebMedium', sans-serif;
   background-color: #f5f8fa;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,10 +1479,16 @@ nav {
 
 .main-content__goods-in-the-shop-cart {
   margin-top: 58px;
+  padding: 0 41px 0 46px;
+}
+
+.main-content__order-price {
+  padding: 0 41px 0 46px;
 }
 
 .main-content__checkout {
   margin: 37px 0 88px;
+  padding: 45px 41px 57px 46px;
 }
 
 .amount-wrap--shopping-cart {
@@ -1493,8 +1499,6 @@ nav {
   width: 869px;
   border-radius: 5px;
   background-color: #ffffff;
-  padding-left: 46px;
-  padding-right: 41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1624,12 +1628,246 @@ nav {
   height: 93px;
   border-radius: 0 0 5px 5px;
   background-color: #e3eaef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.total-amount {
+  font-family: 'PTRootUIWebMedium', sans-serif;
+  color: #79848f;
+  font-size: 14px;
+}
+
+.total-price {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 24px;
 }
 
 .checkout {
   width: 869px;
-  height: 872px;
   border-radius: 5px;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout__header {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.checkout__address-text {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.checkout__recipient {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 20px;
+  margin: 39px 0 24px 0;
+}
+
+.checkout__recipient-checkout {
+  width: 449px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f24841;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'PTRootUIWebBold', sans-serif;
+}
+
+.checkout__recipient-checkout:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #e93d35;
+}
+
+.checkout__recipient-checkout:focus {
+  outline: none;
+}
+
+.checkout__recipient-checkout:active {
+  background-color: #db2d25;
+}
+
+.form-input {
+  width: 431px;
+  height: 42px;
+  border-radius: 3px;
+  border: 2px solid #e3e8f0;
+  background-color: #ffffff;
+  padding-left: 16px;
+  color: #142558;
+  font-size: 15px;
+  margin-bottom: 24px;
+  margin-right: 19px;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-input::-ms-input-placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-input::placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-input:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-color: #a1a8bd;
+}
+
+.form-input:focus {
+  border-color: #315ad5;
+  outline: none;
+}
+
+.form-input:focus::-webkit-input-placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.form-input:focus:-ms-input-placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  transform: translateY(-15px);
+}
+
+.form-input:focus::-ms-input-placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  transform: translateY(-15px);
+}
+
+.form-input:focus::placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.form-input--small {
+  width: 80px;
+}
+
+.form-textarea {
+  width: 417px;
+  height: 95px;
+  border-radius: 3px;
+  border: 2px solid #e3e8f0;
+  background-color: #ffffff;
+  padding: 16px;
+  color: #142558;
+  font-size: 15px;
+  resize: none;
+}
+
+.form-textarea::-webkit-input-placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-textarea:-ms-input-placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-textarea::-ms-input-placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-textarea::placeholder {
+  color: #a1a8bd;
+  font-size: 14px;
+}
+
+.form-textarea:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-color: #a1a8bd;
+}
+
+.form-textarea:focus {
+  border-color: #315ad5;
+  outline: none;
+}
+
+.form-textarea:focus::-webkit-input-placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.form-textarea:focus:-ms-input-placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  transform: translateY(-15px);
+}
+
+.form-textarea:focus::-ms-input-placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  transform: translateY(-15px);
+}
+
+.form-textarea:focus::placeholder {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 11px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 /*# sourceMappingURL=main.css.map */

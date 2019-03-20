@@ -170,9 +170,38 @@
             </div>
         </div>
         <div class="main-content__order-price order-price">
-
+            <p class="total-amount">
+                <span class="total-amount">
+                3 
+                </span>
+                товара
+            </p>
+            <p class="total-price">
+                К оплате:  
+                <span class="total-price">
+                28 197 ₽
+                </span>
+            </p>
         </div>
         <div class="main-content__checkout checkout">
+            <h3 class="checkout__header">Оформление заказа</h3>
+            <h4 class="checkout__address-text">Адрес доставки</h4>
+            
+            <form class="checkout__form" action="#">
+                <input name="address" type="text" placeholder="Город, улица, номер дома*" class="checkout__address form-input">  
+              <div class="checkout__wrap">
+                    <input name="address-office" type="text" placeholder="Кв/офис" class="checkout__address-office form-input form-input--small">
+                    <input name="address-storey" type="text" placeholder="Этаж" class="checkout__address-storey form-input form-input--small">
+                    <input name="address-entrance" type="text" placeholder="Подъезд" class="checkout__address-entrance form-input form-input--small">  
+                </div>
+                <textarea name="comment" placeholder="Комментарий к заказу" class="checkout__comment form-textarea"></textarea>
+                <h4 class="checkout__recipient">Получатель</h4>
+                <input name="recipient-name" type="text" placeholder="Имя*" class="checkout__recipient-name  form-input">
+                <input name="recipient-last-name" type="text" placeholder="Фамилия*" class="checkout__recipient-last-name  form-input">
+                <input name="recipient-mail" type="text" placeholder="Электронная почта*" class="checkout__recipient-mail  form-input">
+                <input name="phone-number" type="text" placeholder="Номер телефона*" class="checkout__recipient-phone-number  form-input">
+                <input type="submit" value="Оформить заказ" class="checkout__recipient-checkout">
+            </form>
 
         </div>
     </main>

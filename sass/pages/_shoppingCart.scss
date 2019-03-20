@@ -1,10 +1,16 @@
 .main-content{
     &__goods-in-the-shop-cart{
         margin-top: 58px;
+        padding: 0 41px 0 46px;
+    }
+    &__order-price{
+        padding: 0 41px 0 46px;
     }
     &__checkout{
         margin: 37px 0 88px;
+        padding: 45px 41px 57px 46px;
     }
+
 }
 .amount-wrap{
     &--shopping-cart{
@@ -16,8 +22,7 @@
     width: 869px; 
     border-radius: 5px;
     background-color: #ffffff;
-    padding-left: 46px;
-    padding-right: 41px;
+   
     display: flex;
     flex-direction: column;
     &__header{
@@ -125,11 +130,132 @@
     height: 93px;   //===================
     border-radius: 0 0 5px 5px;
     background-color: #e3eaef;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .total-amount{
+        @include medium;
+        color: #79848f;
+        font-size: 14px;
+    }
+    .total-price{
+        @include bold;
+        color: #142558;
+        font-size: 24px;
+    }
 .checkout{
     width: 869px;
-    height: 872px;  //===================
     border-radius: 5px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__header{
+        @include bold;
+        color: #142558;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    &__address-text{
+        @include bold;
+        color: #142558;
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+    &__recipient{
+        @include bold;
+        color: #142558;
+        font-size: 20px;
+        margin: 39px 0 24px 0;
+    }
+    &__recipient-checkout{
+        width: 449px;
+        height: 56px;
+        border-radius: 5px;
+        background-color: #f24841;
+        border: none;
+        
+        color: #ffffff;
+        font-size: 16px;
+        @include bold;
+        
+        &:hover{
+            transition: 0.2s;
+            background-color: #e93d35;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+        &:active{
+            background-color:#db2d25;
+        }
+    }
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+.form-input{
+    width: 431px;
+    height: 42px;
+    border-radius: 3px;
+    border: 2px solid #e3e8f0;
+    background-color: #ffffff;
+    padding-left: 16px;
+    color: #142558;
+    font-size: 15px;
+    margin-bottom: 24px;
+    margin-right: 19px;
+    &::placeholder{
+        color: #a1a8bd;
+        font-size: 14px;
+    }
+    &:hover{
+        transition: 0.2s;
+        border-color: #a1a8bd;
+    }
+    &:focus{
+        border-color: #315ad5;
+        outline: none;
+        &::placeholder{
+            transition: 0.2s;
+            font-size: 11px;
+            transform: translateY(-15px);
+        }
+    }
+    &--small{
+        width: 80px;
+    }
+   
+}
+.form-textarea{
+    width: 417px;
+    height: 95px;
+    border-radius: 3px;
+    border: 2px solid #e3e8f0;
+    background-color: #ffffff;
+    padding: 16px;
+    color: #142558;
+    font-size: 15px;
+    resize: none;
+    &::placeholder{
+        color: #a1a8bd;
+        font-size: 14px;
+    }
+    &:hover{
+        transition: 0.2s;
+        border-color: #a1a8bd;
+    }
+    &:focus{
+        border-color: #315ad5;
+        outline: none;
+        &::placeholder{
+            transition: 0.2s;
+            font-size: 11px;
+            transform: translateY(-15px);
+        }
+    }
+}
