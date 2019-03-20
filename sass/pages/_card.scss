@@ -1,12 +1,16 @@
 .main-content{
 
     &__path{
-        width: 1200px;
         margin-top: 27px;
+    }
+    &__about-card{
+        margin: 26px  0 118px ;
+        padding: 32px 0 96px ;
     }
 }
 
 .path{
+    width: 1200px;
     &__main-page{
         @include light;
         color: #828aa2;
@@ -36,4 +40,70 @@
     &__icon{
         margin: 0 6px -2px 6px;
     }
+}
+
+.about-card{
+    width: 1200px;
+    height: 924px; // не забудь убрать
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    &__slider{
+        margin:5px 32px 0 53px;
+    }
+    &__card{
+        margin-left: 65px;
+        margin-right: 100px;
+    }
+}
+
+.slider{
+    min-width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__icon-arrow{
+        margin-bottom: 24px;
+    }
+    &__img-wrap{
+        margin-top: -4px;
+        margin-bottom: 13px;
+    }
+
+}
+.img-wrap{
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+    border: 2px solid #e3e8f000;
+    &--active,&:hover{
+        transition: 0.1s;
+        border: 2px solid #e3e8f0;
+        cursor: pointer;
+    }
+    
+}
+.img-item{
+    width: 100%;
+    height: 100%;
+}
+.icon-arrow{
+    &--up{
+        transform: rotate(180deg);
+    }
+    &:hover{
+        cursor: pointer;
+        &>use{
+          transition: 0.3s;
+          fill:#e93d35;  
+        }
+        
+    }
+}
+
+
+.card-item{
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
