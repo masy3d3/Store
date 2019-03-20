@@ -1201,7 +1201,6 @@ nav {
 
 .about-card {
   width: 1200px;
-  height: 924px;
   border-radius: 5px;
   background-color: #ffffff;
   display: -webkit-box;
@@ -1278,6 +1277,203 @@ nav {
 .card-item {
   width: 100%;
   height: 100%;
-  background-color: red;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information__buying {
+  margin-left: 129px;
+}
+
+.buying__product-name {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 36px;
+  margin-top: 23px;
+}
+
+.buying__product-id {
+  font-family: 'PTRootUIWebLight', sans-serif;
+  color: #a1a8bd;
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+.buying__product-status {
+  font-family: 'PTRootUIWebLight', sans-serif;
+  color: #142558;
+  font-size: 16px;
+  margin-top: 15px;
+  padding-left: 17px;
+  position: relative;
+}
+
+.buying__product-status:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #44b759;
+  top: 5px;
+  left: 2px;
+}
+
+.buying__form-buy {
+  margin-top: 35px;
+  padding: 28px;
+  padding-top: 0px;
+}
+
+.form-buy {
+  border-radius: 10px;
+  background-color: #f5f8fa;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-buy__price {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 30px;
+  margin-top: 38px;
+}
+
+.form-buy__amount {
+  width: 42px;
+  height: 32px;
+  border-radius: 3px;
+  border: 2px solid #e3e8f0;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 4px;
+  color: #142558;
+  font-size: 16px;
+}
+
+.form-buy__in-cart {
+  width: 315px;
+  height: 51px;
+  border-radius: 5px;
+  background-color: #f24841;
+  border: none;
+  margin-top: 22px;
+  color: #ffffff;
+  font-family: 'PTRootUIWebBold', sans-serif;
+  font-size: 18px;
+}
+
+.form-buy__in-cart:focus {
+  outline: none;
+}
+
+.form-buy__in-cart:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #e93d35;
+}
+
+.form-buy__in-cart:active {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #db2d25;
+}
+
+.form-buy__delivery-inf {
+  margin-bottom: 4px;
+  margin-left: 14px;
+  font-family: 'PTRootUIWebLight', sans-serif;
+  color: #848ca4;
+  font-size: 16px;
+  position: relative;
+}
+
+.form-buy__delivery-inf:before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: #e3e8f0;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  z-index: 0;
+}
+
+.form-buy__delivery-icon {
+  margin-left: 9px;
+  z-index: 1;
+}
+
+.amount-wrap {
+  display: relative;
+  margin-left: 92px;
+  margin-top: 27px;
+}
+
+.amount-wrap:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #f24841;
+  margin-top: 20px;
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+.amount-wrap:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #f24841;
+  margin-top: -23px;
+  margin-left: 74px;
+  cursor: pointer;
+}
+
+.amount-wrap__plus:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 18px;
+  background-color: #f24841;
+  margin-top: 13px;
+  margin-left: 82px;
+  cursor: pointer;
+}
+
+.description__header {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  color: #142558;
+  font-size: 17px;
+  margin-bottom: 16px;
+  margin-top: 9px;
+}
+
+.description__header--second {
+  margin-top: 47px;
+}
+
+.description__text {
+  font-family: 'PTRootUIWebLight', sans-serif;
+  color: #828aa2;
+  font-size: 16px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=main.css.map */

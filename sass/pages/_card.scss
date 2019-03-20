@@ -44,7 +44,6 @@
 
 .about-card{
     width: 1200px;
-    height: 924px; // не забудь убрать
     border-radius: 5px;
     background-color: #ffffff;
     display: flex;
@@ -105,5 +104,189 @@
 .card-item{
     width: 100%;
     height: 100%;
-    background-color: red;
 }
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    &__buying{
+        margin-left: 129px;
+    }
+}
+.buying{
+    &__product-name{
+        @include bold;       
+        color: #142558;
+        font-size: 36px;
+        margin-top: 23px;
+    }
+    &__product-id{
+        @include light;
+        color: #a1a8bd;
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    &__product-status{
+        @include light;
+        color: #142558;
+        font-size: 16px;
+        margin-top: 15px;
+        padding-left: 17px;
+        position: relative;
+
+        &:before{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: #44b759;
+            top: 5px;
+            left: 2px;
+        }
+    }
+    
+    &__form-buy{
+        margin-top: 35px;
+        padding: 28px;
+        padding-top: 0px;
+    }
+}
+
+.form-buy{
+    border-radius: 10px;
+    background-color: #f5f8fa;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &__price{
+        @include bold;
+        color: #142558;
+        font-size: 30px;
+        margin-top: 38px;
+    }
+    &__amount{
+        width: 42px;
+        height: 32px;
+        border-radius: 3px;
+        border: 2px solid #e3e8f0;
+        background-color: #ffffff;
+
+        text-align: center;
+        padding: 4px;
+        color: #142558;
+        font-size: 16px;
+
+    }
+    &__in-cart{
+        width: 315px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: #f24841;
+        border: none;
+        margin-top: 22px;
+
+        color: #ffffff;
+        @include bold;
+        font-size: 18px;
+        
+        &:focus{
+            outline: none;
+        }
+
+        &:hover{
+            transition: 0.1s;
+            background-color: #e93d35; 
+        }
+
+        &:active{
+            transition: 0.1s;
+            background-color: #db2d25;
+        }
+    }
+
+    &__delivery-inf{
+        margin-bottom: 4px;
+        margin-left: 14px;
+        @include light;
+        color: #848ca4;
+        font-size: 16px;
+
+        position: relative;
+        &:before{
+            content: "";
+            width: 37px;
+            height: 37px;
+            background-color: #e3e8f0;
+            border-radius: 100%;
+            position: absolute;
+            top: -10px;
+            left: -50px;
+            z-index: 0;
+        }
+    }
+    &__delivery-icon{
+        margin-left: 9px;
+        z-index: 1;
+    }
+}
+.amount-wrap{
+    display: relative;
+    margin-left: 92px;
+    margin-top: 27px;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background-color: #f24841;
+        margin-top: 20px;
+        margin-left: -40px;
+        cursor: pointer;
+        
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background-color: #f24841;
+        margin-top: -23px;
+        margin-left: 74px;
+        cursor: pointer;
+    }
+    &__plus{
+        &:after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 18px;
+            background-color: #f24841;
+            margin-top: 13px;
+            margin-left: 82px;
+            cursor: pointer;
+        }
+    }
+}
+
+.description{
+    &__header{
+        @include bold;
+        color: #142558;
+        font-size: 17px;
+        margin-bottom: 16px;
+        margin-top: 9px;
+        &--second{
+            margin-top: 47px;
+        }
+    }
+    &__text{
+        @include light;
+        color: #828aa2;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
