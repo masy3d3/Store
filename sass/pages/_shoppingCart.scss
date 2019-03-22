@@ -183,7 +183,7 @@
         color: #ffffff;
         font-size: 16px;
         @include bold;
-        
+
         &:hover{
             transition: 0.2s;
             background-color: #e93d35;
@@ -198,6 +198,7 @@
         }
     }
 }
+
 .form-input{
     width: 431px;
     height: 42px;
